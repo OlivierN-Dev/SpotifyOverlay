@@ -2,15 +2,15 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
 
-CLIENT_ID = "212664672e1147d3bb1f0c28fb9f559e"
-CLIENT_SECRET = "afaac18905734ade8982bbb68ed59d1f"
-REDIRECT_URI = "https://maryam-intercollegiate-raphael.ngrok-free.dev/callback"
+client_id = "VOTRE_CLIENT_ID"
+client_secret = "VOTRE_CLIENT_SECRET"
+redirect_uri = "http://localhost:8080/"
 SCOPE = "user-read-playback-state user-modify-playback-state user-library-modify"
 
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
-    client_id=CLIENT_ID,
-    client_secret=CLIENT_SECRET,
-    redirect_uri=REDIRECT_URI,
+    client_id='CLIENT_ID',
+    client_secret="CLIENT_SECRET",
+    redirect_uri="REDIRECT_URI",
     scope=SCOPE
 ))
 
